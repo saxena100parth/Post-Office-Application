@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 98vw;
+  margin: 2px;
+  padding: 2px;
+}
+.header {
+  background-color: rgb(31, 27, 27);
+  padding: 10px;
+}
+.IP-address {
+  padding: 10px;
+  margin-top: 8px;
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 8px;
+  color: white;
+}
+.detail span {
+  font-weight: 300;
+  color: rgb(232, 221, 221);
+}
+
+.map {
+  background-color: #575a85;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.map h2 {
+  color: white;
+}
+.map map {
+  border: 2px solid white;
+  width: 90vw;
+  height: 60vh;
+  margin: 20px;
+}
+.information {
+  background-color: rgb(31, 27, 27);
+  padding: 10px;
+}
+
+.info-heading {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  color: #575a85;
+}
+.info-detail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  line-height: 2rem;
+  font-weight: 200;
+  color: white;
+}
+.info-detail span {
+  font-weight: 700;
+  color: rgb(153, 188, 219);
+}
+
+.postNearYou {
+  padding: 10px;
+  background-color: rgb(31, 27, 27);
+}
+.postNearYou input {
+  width: 98%;
+
+  margin: 10px;
+  margin-top: 0px;
+
+  padding: 10px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.card {
+  color: rgb(229, 211, 211);
+  background-color: #575a85;
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.4rem;
+
+  padding: 20px;
+  width: 90%;
+}
+.card span {
+  font-weight: 900;
+  color: white;
+}

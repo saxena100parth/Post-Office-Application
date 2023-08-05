@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Post Office Application</title>
+    <link rel="stylesheet" href="/second.css" />
+  </head>
+  <body>
+    <section class="header">
+      <!-- IP address -->
+      <div>
+        <p class="IP-address">IP Address: <span id="ip"></span></p>
+      </div>
+      <!-- details -->
+      <div class="detail">
+        <div class="lat-long">
+          <p>Lat: <span id="lat"></span></p>
+          <p>Long: <span id="long"></span></p>
+        </div>
+        <div class="city-region">
+          <p>City: <span id="city"></span></p>
+          <p>Region: <span id="region"></span></p>
+        </div>
+        <div class="Organisation">
+          <p>Organisation: <span id="organisation"></span></p>
+          <p>Hostname: <span id="hostname"></span></p>
+        </div>
+      </div>
+    </section>
+    <!-- map section -->
+    <section class="map">
+      <h2>Your current Location</h2>
+      <map id="map"></map>
+    </section>
+    <!-- More Information -->
+    <section class="information">
+      <div class="info-heading">
+        <h2>More Information About You</h2>
+      </div>
+      <div class="info-detail">
+        <p>Time Zone: <span id="timeZone"></span></p>
+        <!-- update date and time -->
+        <p>Date And Time: <span id="dateTime"> 23-aug-2021 12:00:00 </span></p>
+        <p>Pincode: <span id="pincode"></span></p>
+        <p>Message: <span id="allPins">No. of pin code found</span></p>
+      </div>
+    </section>
+    <!-- post office cards -->
+    <section class="postNearYou">
+      <div class="info-heading">
+        <h2>Post Offices Near You</h2>
+      </div>
+      <input type="text" id="filter" placeholder="search By Name" />
+      <div class="cards" id="cards"></div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4gWXXuMqHLVIxfwly66zw8W-8KWu_8do&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="/second.js"></script>
+  </body>
+</html>
