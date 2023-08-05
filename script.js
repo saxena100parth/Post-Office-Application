@@ -1,6 +1,6 @@
 let startBtn = document.getElementById("start");
 startBtn.addEventListener("click", () => {
-  window.location.href = "./second.html";
+  window.location.href = "/second.html";
 });
 
 function getUserIP() {
